@@ -18,3 +18,5 @@ filter_words = word_count.filter(word_count["count"] > 500)
 
 # Sort by count and display
 word_count_sort = filter_words.sort(filter_words["count"].desc()).show()
+
+spark.stop()
